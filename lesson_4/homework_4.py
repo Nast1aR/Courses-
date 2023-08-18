@@ -16,7 +16,7 @@ def add_player(players: list[dict], num: int, name: str, age: int) -> None:
     """This function adds a new player."""
 
     for player in players:
-        if player['number'] == num:
+        if player["number"] == num:
             print(f"{num} player already exists.")
             return
     players.append({"name": name, "age": age, "number": num})
@@ -26,7 +26,7 @@ def add_player(players: list[dict], num: int, name: str, age: int) -> None:
 def remove_player(players: list[dict], num: int) -> None:
     """This function removes the player by their number."""
     for player in players:
-        if player['number'] == num:
+        if player["number"] == num:
             players.remove(player)
             print(f"Player with number: {num} is removed")
             return
