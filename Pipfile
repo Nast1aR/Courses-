@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+request = "~=2.31"
 
 [dev-packages]
 black = "~=23.7"
